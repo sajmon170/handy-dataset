@@ -11,7 +11,7 @@ def Signs2k(root):
         v2.RandomVerticalFlip(p=0.5),
         v2.RandomRotation(degrees=360),
         v2.RandomPerspective(),
-        v2.ElasticTransform()
+        v2.ElasticTransform(),
     ])
 
     train = torchvision.datasets.ImageFolder(os.path.join(root, "train"),
