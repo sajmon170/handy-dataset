@@ -17,7 +17,7 @@ def Signs2k(root):
     train = torchvision.datasets.ImageFolder(os.path.join(root, "train"),
                                              transform=transforms)
 
-    validate = torchvision.datasets.ImageFolder(os.path.join(root, "train"),
+    validate = torchvision.datasets.ImageFolder(os.path.join(root, "validate"),
                                                 transform=transforms)
 
     test = torchvision.datasets.ImageFolder(os.path.join(root, "test"),
